@@ -1,0 +1,51 @@
+menu "StudioPieters"
+
+      config ESP_WIFI_SSID
+              string "WiFi SSID"
+              default "jonkofee"
+              help
+                  SSID (network name) for the example to connect to.
+
+      config ESP_WIFI_PASSWORD
+              string "WiFi Password"
+              default "123123123"
+              help
+                  WiFi password (WPA or WPA2) for the example to use.
+
+      config ESP_LED_GPIO
+              int "Set the GPIO for the LED"
+              default 2
+              help
+                  The GPIO number the LED is connected to.
+
+      config ESP_LIGHTBULB_RELAY_GPIO
+              int "Set the GPIO for the LIGHTBULB"
+              default 26
+              help
+                  The GPIO number the LED is connected to.
+
+      config ESP_LIGHTBULB_BUTTON_GPIO
+              int "Set the GPIO for the LIGHTBULB button"
+              default 27
+              help
+                  The GPIO number the LED is connected to.
+
+      config ESP_DELAY
+              int "Wait for 5 seconds"
+              default 100
+              help
+                The GPIO number the A3144 sensor is connected to.
+
+      config ESP_SETUP_CODE
+              string "HomeKit Setup Code"
+              default "338-77-883"
+              help
+                  If you want to change the HomeKit Setup Code, you can do that here (Note:  you need to make a new QR-CODE To make it work)
+
+      config ESP_SETUP_ID
+              string "HomeKit Setup ID"
+              default "1QJ8"
+              help
+                   If you want to change the HomeKit Setup ID, you can do that here (Note: you need to make a new QR-CODE To make it work)
+
+endmenu
